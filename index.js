@@ -6,6 +6,7 @@ const delotMod = require('./delorders')
 const sunsetbace = require('./sunsetbace')
 const reprintbillMod = require('./reprintbill')
 const askbillpris =  require('./askrepri')
+const PORT = process.env.PORT || 5000 ;
 
 const app = express()
 app.use(cors())
@@ -282,6 +283,6 @@ app.get('/order' , (req,res) => {
     .catch(err => res.json(err))
 }) 
 
-app.listen(5000, () => {
-    console.log("started ")
+app.listen(PORT, (req,res) => {
+    console.log("started server")
 })
