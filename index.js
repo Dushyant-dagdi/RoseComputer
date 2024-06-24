@@ -283,6 +283,11 @@ app.get('/order' , (req,res) => {
     .catch(err => res.json(err))
 }) 
 
+app.get('/' , (req,res) => {
+    res.send("fdghethg")
+}) 
+
+
 app.listen(PORT, (req,res) => {
     console.log("started server")
 })
