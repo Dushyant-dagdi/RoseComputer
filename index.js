@@ -283,7 +283,7 @@ app.get('/order' , (req,res) => {
     .catch(err => res.json(err))
 }) 
 
-app.get('/' , (req,res) => {
+app.get('https://dushyant-dagdi.github.io/RoseComputer/' , (req,res) => {
     res.send("fdghethg")
 }) 
 
